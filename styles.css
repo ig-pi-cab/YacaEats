@@ -1,6 +1,5 @@
 .slider-container{
-    height: 10em;
-    border: 1px solid black;
+    height: 15em;
     padding: 15px 10px 20px 20px;
 
 }
@@ -11,9 +10,18 @@
     position: relative;
 }
 
-.slider .prev_arrow{
-    
+.slider .prev_arrow {
+    position: absolute;
     cursor: pointer;
+    bottom: -20px;
+}
+
+.slider .next_arrow{
+    cursor: pointer;
+    position:absolute;
+    bottom: -20px;
+    right: 50px;
+
 }
 .slider .slider_items{
 
@@ -24,14 +32,15 @@
 }
 
 .slider-photo{
-    max-width: 200%;
-    max-height: 200%;
+    height: 150px;
+    width: fit-content;
     position: absolute;
     border-radius: 25px;
     z-index: -1;
+    
 }
 .slick-list{
-    height: 80px;
+    height: 150px;
 }
 
 #firstContainer{
